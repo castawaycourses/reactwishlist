@@ -1,11 +1,13 @@
 import { useState } from "react"
 
-const TodoForm = () => {
+const TodoForm = ({ addItemHandler }) => {
     const [taskName, setTaskName] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(taskName);
+
+        addItemHandler(taskName);
+
         setTaskName("");
     }
 
