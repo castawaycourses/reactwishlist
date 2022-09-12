@@ -1,6 +1,11 @@
+import Checkbox from "./Checkbox"
+
 const TaskList = () => {
   return (
-    <div>TaskList</div>
+    <div>
+        <h2>TaskList</h2>
+        <Checkbox />
+    </div>
   )
 }
 

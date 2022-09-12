@@ -1,6 +1,13 @@
+import TaskList from "./TaskList"
+import TodoForm from "./TodoForm"
+
 const Container = () => {
   return (
-    <div>Container</div>
+    <div>
+        <h2>Container</h2>
+        <TodoForm />
+        <TaskList />
+    </div>
   )
 }
 
