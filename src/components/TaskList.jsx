@@ -21,7 +21,12 @@ const TaskList = ( { list, setList } ) => {
         setList(updatedList);
     }
 
-    const checkBoxes = list.map((item) => <Checkbox key={ item.id } data={ item.taskName } onChangeStatus={onChangeStatus}/> );
+    const checkBoxes = list.map((item) => <Checkbox 
+                                            key={ item.id } 
+                                            taskId={item.id} 
+                                            data={ item.taskName } 
+                                            done={ item.done } 
+                                            onChange={onChangeStatus}/> );
 
     return (
         <div>
