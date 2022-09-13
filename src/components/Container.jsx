@@ -13,7 +13,7 @@ const Container = () => {
         <div>
             <h2>Container</h2>
             <TodoForm addItemHandler={ addItem } />
-            <TaskList />
+            <TaskList list={ taskList } setList={ setTaskList } />
         </div>
     )
 }
