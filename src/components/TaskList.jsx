@@ -32,7 +32,7 @@ const TaskList = ( { list, setList } ) => {
         <div>
             <h2>TaskList</h2>
             <div className="taskList">
-                { list.length ? checkBoxes : <p>"No tasks"</p> }
+                { list.length ? checkBoxes : <p className="emptyList">"No tasks"</p> }
 
                 { list.length ? (<button className="button blue" onClick={onClickRemoveTask}>Delete all done</button>) : null }
             </div>

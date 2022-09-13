@@ -25,6 +25,12 @@ body {
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 
+.emptyList {
+  font-size: 20px;
+  font-weight: bold;
+  color:#e9630a;
+}
+
 .button {
   outline: none;
   padding: 8px;
@@ -39,7 +45,7 @@ body {
 }
 
 .pink {
-  background: pink;
+  background: rgb(192, 5, 36);
 }
 
 .blue {

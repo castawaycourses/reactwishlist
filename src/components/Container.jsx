@@ -11,7 +11,7 @@ const Container = () => {
 
     return (
         <div>
-            <h2>Container</h2>
+            <h2>My TaskList App!!!</h2>
             <TodoForm addItemHandler={ addItem } />
             <TaskList list={ taskList } setList={ setTaskList } />
         </div>
