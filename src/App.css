@@ -15,3 +15,128 @@ body {
   text-align: center;
 }
 
+.todoList {
+  background: #fff;
+  font-size: 16px;
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  border: 0px solid;
+  border-radius: 5px;
+  color: white;
+}
+
+.button[disabled] {
+  opacity: 0.3;
+}
+
+.pink {
+  background: pink;
+}
+
+.blue {
+  background: blue;
+}
+
+.taskInput {
+  padding: 2px;
+  background: #f8f8f8;
+}
+
+.taskInput>.text {
+  outline: none;
+  padding: 0px 10px;
+  font-size: 16px;
+  width: 230px;
+  height: 46px;
+  background: transparent;
+  border: 0px solid;
+}
+
+.todoBlock {
+  display: flex;
+  padding: 8px;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.todoItem {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  width: 300px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #a60ae9;
+  font-size: 48px;
+
+}
+
+/*.newItem {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeIn .3s linear forwards;
+}*/
+
+.todoItem input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkMark {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  height: 35px;
+  width: 35px;
+  background-color: #fff;
+}
+
+.todoItem:hover input~.checkMark {
+  background-color: #ccc;
+}
+
+.todoItem input:checked~.checkMark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.todoItem input:checked~.checkmark:after {
+  display: block;
+}
+
+.todoItem .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.todoText {
+
+}
