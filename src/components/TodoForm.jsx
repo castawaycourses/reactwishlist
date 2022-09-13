@@ -1,12 +1,18 @@
 import { useState } from "react"
 
+import * as uuid from "uuid";
+
 const TodoForm = ({ addItemHandler }) => {
     const [taskName, setTaskName] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        addItemHandler(taskName);
+        addItemHandler({
+            id: uuid.v4(),
+            taskName,
+            done: false
+        });
 
         setTaskName("");
     }
