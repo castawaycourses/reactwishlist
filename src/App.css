@@ -28,7 +28,7 @@ body {
 .emptyList {
   font-size: 20px;
   font-weight: bold;
-  color:#e9630a;
+  color: #e9630a;
 }
 
 .button {
@@ -72,7 +72,7 @@ body {
   padding: 8px;
   flex-direction: row;
   justify-content: center;
-  
+
 }
 
 .todoItem {
@@ -141,8 +141,4 @@ body {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-
-.todoText {
-
 }
